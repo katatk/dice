@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .wrapper {
+            flex: 1 0 auto;
+        }
+        
+        .dice {
+            width: 128px;
+            height: 128px;
+            display: inline-block;
+        }
+        
+        .dice-1 {
+            background-image: url("img/dice-1.png");
+        }
+        
+        .dice-2 {
+            background-image: url("img/dice-2.png");
+        }
+        
+        .dice-3 {
+            background-image: url("img/dice-3.png");
+        }
+        
+        .dice-4 {
+            background-image: url("img/dice-4.png");
+        }
+        
+        .dice-5 {
+            background-image: url("img/dice-5.png");
+        }
+        
+        .dice-6 {
+            background-image: url("img/dice-6.png");
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1>Roll the Dice</h1>
+        <div id="roll-message"></div>
+
+        <button onclick="createDice()">Roll</button>
+        <div id="dice-container">
+
+        </div>
+
+    </div>
+    <footer>
+        <p>Dice icons by <a href="http://www.freepik.com">Freepik</a> from <a href="http://www.flaticon.com">Flaticon</a></p>
+    </footer>
+
+    <script src="dice.js"></script>
+</body>
+
+</html>
